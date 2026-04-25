@@ -15,75 +15,71 @@
         <img src="assets/logo.png" alt="Logo AGRO PALME">
         <div>
           <div class="name">AGRO PALME</div>
-          <div class="tag">Import – Export de Produits Agro-alimentaires</div>
+          <div class="tag" data-i18n="nav.brand-tag">Import – Export de Produits Agro-alimentaires</div>
         </div>
       </div>
       <nav class="menu">
-        <a href='index.html'>Accueil</a>
-        <a href='produits.html' style='color:var(--text);background:rgba(201,162,77,.12)'>Produits</a>
-        <a href='services.html'>Services</a>
-        <a href='contact.html'>Contact</a>
-        <a class="btn" href="contact.html">Demander un devis</a>
+        <a href='index.html' data-i18n="nav.home">Accueil</a>
+        <a href='produits.html' style='color:var(--text);background:rgba(201,162,77,.12)' data-i18n="nav.products">Produits</a>
+        <a href='services.html' data-i18n="nav.services">Services</a>
+        <a href='contact.html' data-i18n="nav.contact">Contact</a>
+        <a class="btn" href="contact.html" data-i18n="nav.quote">Demander un devis</a>
+        <button id="lang-btn" class="lang-btn" type="button">EN</button>
       </nav>
     </div>
   </header>
 
-  
-
 <section class="section">
   <div class="container">
-    <h2>Catalogue produits</h2>
-    <p>Photos réelles. Cliquez sur un produit pour zoomer et parcourir la galerie.</p>
+    <h2 data-i18n="products.h2">Catalogue produits</h2>
+    <p data-i18n="products.intro">Photos réelles. Cliquez sur un produit pour zoomer et parcourir la galerie.</p>
 
     <div class="filters">
-      <button class="filter-btn active" data-filter="all" type="button">Tout</button>
-      <button class="filter-btn" data-filter="branchette" type="button">Branchette 1 kg</button>
-      <button class="filter-btn" data-filter="arjoun1" type="button">Arjoun 1 kg</button>
-      <button class="filter-btn" data-filter="arjoun3" type="button">Arjoun 3 kg</button>
+      <button class="filter-btn active" data-filter="all" type="button" data-i18n="products.filter-all">Tout</button>
+      <button class="filter-btn" data-filter="branchette" type="button" data-i18n="products.filter-branchette">Branchette 1 kg</button>
+      <button class="filter-btn" data-filter="arjoun1" type="button" data-i18n="products.filter-arjoun1">Arjoun 1 kg</button>
+      <button class="filter-btn" data-filter="arjoun3" type="button" data-i18n="products.filter-arjoun3">Arjoun 3 kg</button>
     </div>
 
     <div class="gallery">
-      <article class="card item gcard" data-cat="branchette" data-title="Branchette • 1 kg" data-desc="Présentation premium, idéale pour la revente et les rayons." data-imgs="assets/photos/branchette-1kg-1-full.jpg,assets/photos/branchette-1kg-2-full.jpg,assets/photos/branchette-1kg-3-full.jpg,assets/photos/branchette-1kg-4-full.jpg">
+      <article class="card item gcard" data-cat="branchette" data-title="Branchette • 1 kg" data-desc="Présentation premium, idéale pour la revente et les rayons." data-imgs="assets/photos/branchette-1kg-1-full.jpg,assets/photos/branchette-1kg-2-full.jpg,assets/photos/branchette-1kg-3-full.jpg,assets/photos/branchette-1kg-4-full.jpg" data-i18n-title="products.card1-title" data-i18n-desc="products.card1-desc">
   <div class="imgwrap"><img loading="lazy" src="assets/photos/branchette-1kg-1-thumb.jpg" alt="Branchette • 1 kg"></div>
   <div class="meta">
-    <h3>Branchette • 1 kg</h3>
-    <p>Présentation premium, idéale pour la revente et les rayons.</p>
+    <h3 data-i18n="products.card1-title">Branchette • 1 kg</h3>
+    <p data-i18n="products.card1-desc">Présentation premium, idéale pour la revente et les rayons.</p>
     <div class="tags"><span class='tag'>Deglet Nour</span><span class='tag'>1 kg</span><span class='tag'>Branchette</span></div>
   </div>
 </article>
-      <article class="card item gcard" data-cat="arjoun1" data-title="Arjoun • Boîte transparente • 1 kg" data-desc="Visuel vitrine, attractif et premium." data-imgs="assets/photos/arjoun-1kg-1-full.jpg,assets/photos/arjoun-1kg-3-full.jpg,assets/photos/arjoun-1kg-4-full.jpg">
+      <article class="card item gcard" data-cat="arjoun1" data-title="Arjoun • Boîte transparente • 1 kg" data-desc="Visuel vitrine, attractif et premium." data-imgs="assets/photos/arjoun-1kg-1-full.jpg,assets/photos/arjoun-1kg-3-full.jpg,assets/photos/arjoun-1kg-4-full.jpg" data-i18n-title="products.card2-title" data-i18n-desc="products.card2-desc">
   <div class="imgwrap"><img loading="lazy" src="assets/photos/arjoun-1kg-1-thumb.jpg" alt="Arjoun • Boîte transparente • 1 kg"></div>
   <div class="meta">
-    <h3>Arjoun • Boîte transparente • 1 kg</h3>
-    <p>Visuel vitrine, attractif et premium.</p>
+    <h3 data-i18n="products.card2-title">Arjoun • Boîte transparente • 1 kg</h3>
+    <p data-i18n="products.card2-desc">Visuel vitrine, attractif et premium.</p>
     <div class="tags"><span class='tag'>Deglet Nour</span><span class='tag'>1 kg</span><span class='tag'>Arjoun</span></div>
   </div>
 </article>
-      <article class="card item gcard" data-cat="arjoun3" data-title="Arjoun • 3 kg" data-desc="Format professionnel, adapté aux grossistes." data-imgs="assets/photos/arjoun-3kg-1-full.jpg,assets/photos/arjoun-3kg-2-full.jpg,assets/photos/arjoun-3kg-3-full.jpg">
+      <article class="card item gcard" data-cat="arjoun3" data-title="Arjoun • 3 kg" data-desc="Format professionnel, adapté aux grossistes." data-imgs="assets/photos/arjoun-3kg-1-full.jpg,assets/photos/arjoun-3kg-2-full.jpg,assets/photos/arjoun-3kg-3-full.jpg" data-i18n-title="products.card3-title" data-i18n-desc="products.card3-desc">
   <div class="imgwrap"><img loading="lazy" src="assets/photos/arjoun-3kg-1-thumb.jpg" alt="Arjoun • 3 kg"></div>
   <div class="meta">
-    <h3>Arjoun • 3 kg</h3>
-    <p>Format professionnel, adapté aux grossistes.</p>
+    <h3 data-i18n="products.card3-title">Arjoun • 3 kg</h3>
+    <p data-i18n="products.card3-desc">Format professionnel, adapté aux grossistes.</p>
     <div class="tags"><span class='tag'>Deglet Nour</span><span class='tag'>3 kg</span><span class='tag'>Pro</span></div>
   </div>
 </article>
     </div>
 
-    <p style="margin-top:18px"><a class="btn" href="contact.html">Demander un devis</a></p>
+    <p style="margin-top:18px"><a class="btn" href="contact.html" data-i18n="products.cta">Demander un devis</a></p>
   </div>
 </section>
 
 <section style="background:#f9f5f0; padding:2rem; text-align:center; margin-top:2rem;">
-  <h2>Dattes Premium d'Arabie Saoudite</h2>
-  <p>Medjool · Ajwa · Sukkari</p>
-  <p>Sourcing en cours auprès de producteurs certifiés
-  ISO 9001, GlobalG.A.P. et FSSC 22000.<br>
-  Disponibles sur demande professionnelle.</p>
+  <h2 data-i18n="products.saudi-h2">Dattes Premium d'Arabie Saoudite</h2>
+  <p data-i18n="products.saudi-varieties">Medjool · Ajwa · Sukkari</p>
+  <p data-i18n-html="products.saudi-desc">Sourcing en cours auprès de producteurs certifiés ISO 9001, GlobalG.A.P. et FSSC 22000.<br>Disponibles sur demande professionnelle.</p>
   <a href="contact.html" style="display:inline-block;
   margin-top:1rem; padding:0.75rem 2rem;
   background:#2d6a4f; color:white;
-  border-radius:4px; text-decoration:none;">
-  Demander un devis</a>
+  border-radius:4px; text-decoration:none;" data-i18n="products.saudi-btn">Demander un devis</a>
 </section>
 
 <div class="lightbox" id="lb" aria-hidden="true">
@@ -99,7 +95,7 @@
     <img class="lightbox-img" id="lbImg" alt="">
     <div class="lightbox-bottom">
       <div id="lbDesc"></div>
-      <div><small>ESC pour fermer • ← → pour naviguer</small></div>
+      <div><small data-i18n="products.lightbox-hint">ESC pour fermer • ← → pour naviguer</small></div>
     </div>
   </div>
 </div>
@@ -110,7 +106,7 @@
   const cards = document.querySelectorAll('.gcard');
 
   function setActive(btn){ btns.forEach(b=>b.classList.remove('active')); btn.classList.add('active'); }
-  function applyFilter(f){ 
+  function applyFilter(f){
     cards.forEach(c=>{
       const ok = (f==='all') || (c.dataset.cat===f);
       c.style.display = ok ? '' : 'none';
@@ -128,11 +124,11 @@
 
   let imgs=[], idx=0;
 
-  function show(){ 
+  function show(){
     lbImg.src = imgs[idx] || '';
     lbImg.alt = (lbTitle.textContent || 'Produit') + ' – photo ' + (idx+1);
   }
-  function openLb(card){ 
+  function openLb(card){
     imgs = (card.dataset.imgs || '').split(',').filter(Boolean);
     idx = 0;
     lbTitle.textContent = card.dataset.title || 'Produit';
@@ -173,5 +169,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>

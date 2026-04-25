@@ -15,59 +15,50 @@
         <img src="assets/logo.png" alt="Logo AGRO PALME">
         <div>
           <div class="name">AGRO PALME</div>
-          <div class="tag">Import – Export de Produits Agro-alimentaires</div>
+          <div class="tag" data-i18n="nav.brand-tag">Import – Export de Produits Agro-alimentaires</div>
         </div>
       </div>
       <nav class="menu">
-        <a href='index.html' style='color:var(--text);background:rgba(201,162,77,.12)'>Accueil</a>
-        <a href='produits.html'>Produits</a>
-        <a href='services.html'>Services</a>
-        <a href='contact.html'>Contact</a>
-        <a class="btn" href="contact.html">Demander un devis</a>
+        <a href='index.html' style='color:var(--text);background:rgba(201,162,77,.12)' data-i18n="nav.home">Accueil</a>
+        <a href='produits.html' data-i18n="nav.products">Produits</a>
+        <a href='services.html' data-i18n="nav.services">Services</a>
+        <a href='contact.html' data-i18n="nav.contact">Contact</a>
+        <a class="btn" href="contact.html" data-i18n="nav.quote">Demander un devis</a>
+        <button id="lang-btn" class="lang-btn" type="button">EN</button>
       </nav>
     </div>
   </header>
 
-  
 <main class="hero">
   <div class="container hero-grid">
     <section class="card hero-card">
-      <div class="kicker"><span class="dot"></span> Portail B2B • Import / Export</div>
-      
+      <div class="kicker"><span class="dot"></span> <span data-i18n="home.kicker">Portail B2B • Import / Export</span></div>
 
-      <h1>Dattes premium & produits agro‑alimentaires<br>pour vos besoins professionnels</h1>
-      <p class="lead">
-        AGRO PALME accompagne les grossistes, distributeurs, épiceries et professionnels avec une sélection
-        de produits de qualité, une logistique maîtrisée et un suivi commercial réactif.
-      </p>
-      <p style="color:var(--muted);font-size:14px;line-height:1.6;margin:4px 0 18px">
-        <span style="color:var(--gold2);font-weight:800">Nouveauté :</span>
-        AGRO PALME élargit son catalogue avec des dattes premium d'Arabie Saoudite — Medjool, Ajwa, Sukkari —
-        sourcées directement auprès de producteurs certifiés ISO 9001, GlobalG.A.P. et FSSC 22000.
-        Disponibles sur demande professionnelle.
-      </p>
+      <h1 data-i18n-html="home.h1">Dattes premium & produits agro‑alimentaires<br>pour vos besoins professionnels</h1>
+      <p class="lead" data-i18n="home.lead">AGRO PALME accompagne les grossistes, distributeurs, épiceries et professionnels avec une sélection de produits de qualité, une logistique maîtrisée et un suivi commercial réactif.</p>
+      <p style="color:var(--muted);font-size:14px;line-height:1.6;margin:4px 0 18px" data-i18n-html="home.new-para"><span style="color:var(--gold2);font-weight:800">Nouveauté :</span> AGRO PALME élargit son catalogue avec des dattes premium d'Arabie Saoudite — Medjool, Ajwa, Sukkari — sourcées directement auprès de producteurs certifiés ISO 9001, GlobalG.A.P. et FSSC 22000. Disponibles sur demande professionnelle.</p>
       <div class="hero-actions">
-        <a class="btn" href="produits.html">Voir les produits</a>
-        <a class="btn" href="services.html" style="background:transparent;color:var(--green);border-color:rgba(31,107,79,.45)">Nos services</a>
+        <a class="btn" href="produits.html" data-i18n="home.btn-products">Voir les produits</a>
+        <a class="btn" href="services.html" style="background:transparent;color:var(--green);border-color:rgba(31,107,79,.45)" data-i18n="home.btn-services">Nos services</a>
       </div>
       <div class="pill-row">
-        <div class="pill">✅ Dattes Deglet Nour</div>
-        <div class="pill">✅ Conditionnements 1 kg / 3 kg</div>
-        <div class="pill">✅ Demande de devis rapide</div>
+        <div class="pill" data-i18n="home.pill1">✅ Dattes Deglet Nour</div>
+        <div class="pill" data-i18n="home.pill2">✅ Conditionnements 1 kg / 3 kg</div>
+        <div class="pill" data-i18n="home.pill3">✅ Demande de devis rapide</div>
       </div>
     </section>
 
     <aside class="card side">
       <div class="card mini">
-        <h3>Contact direct</h3>
-        <p><b>Ali HADID</b> • Dirigeant</p>
-        <p>Tél : <a href="tel:+33666715350">+33 6 66 71 53 50</a><br>
+        <h3 data-i18n="home.sidebar-contact-title">Contact direct</h3>
+        <p data-i18n-html="home.sidebar-contact-name"><b>Ali HADID</b> • Dirigeant</p>
+        <p data-i18n-html="home.sidebar-contact-info">Tél : <a href="tel:+33666715350">+33 6 66 71 53 50</a><br>
         Email : <a href="mailto:contact@agro-palme.fr">contact@agro-palme.fr</a></p>
       </div>
       <div class="card mini">
-        <h3>Devis & commandes</h3>
-        <p>Envoyez votre besoin (quantité, destination, conditionnement). Réponse rapide.</p>
-        <p style="margin-top:10px"><a class="btn" href="contact.html">Demander un devis</a></p>
+        <h3 data-i18n="home.sidebar-quote-title">Devis & commandes</h3>
+        <p data-i18n="home.sidebar-quote-text">Envoyez votre besoin (quantité, destination, conditionnement). Réponse rapide.</p>
+        <p style="margin-top:10px"><a class="btn" href="contact.html" data-i18n="home.sidebar-quote-btn">Demander un devis</a></p>
       </div>
     </aside>
   </div>
@@ -75,26 +66,26 @@
 
 <section class="section">
   <div class="container">
-    <h2>Produits phares</h2>
-    <p>Une présentation simple, claire et efficace pour vos clients.</p>
+    <h2 data-i18n="home.featured-title">Produits phares</h2>
+    <p data-i18n="home.featured-sub">Une présentation simple, claire et efficace pour vos clients.</p>
 
     <div class="grid">
       <div class="card item">
         <div class="top"><span class="badge">Dattes</span><span class="badge">1 kg</span></div>
-        <h3>Branchette • 1 kg</h3>
-        <p>Présentation premium, idéale pour la revente et les rayons.</p>
+        <h3 data-i18n="home.prod1-title">Branchette • 1 kg</h3>
+        <p data-i18n="home.prod1-desc">Présentation premium, idéale pour la revente et les rayons.</p>
       </div>
 
       <div class="card item">
         <div class="top"><span class="badge">Dattes</span><span class="badge">1 kg</span></div>
-        <h3>Arjoun • Boîte transparente • 1 kg</h3>
-        <p>Visuel produit attractif, prêt pour les ventes retail.</p>
+        <h3 data-i18n="home.prod2-title">Arjoun • Boîte transparente • 1 kg</h3>
+        <p data-i18n="home.prod2-desc">Visuel produit attractif, prêt pour les ventes retail.</p>
       </div>
 
       <div class="card item">
         <div class="top"><span class="badge">Dattes</span><span class="badge">3 kg</span></div>
-        <h3>Arjoun • 3 kg</h3>
-        <p>Format professionnel, adapté aux grossistes et distributions.</p>
+        <h3 data-i18n="home.prod3-title">Arjoun • 3 kg</h3>
+        <p data-i18n="home.prod3-desc">Format professionnel, adapté aux grossistes et distributions.</p>
       </div>
     </div>
   </div>
@@ -115,5 +106,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>
