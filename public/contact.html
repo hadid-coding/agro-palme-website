@@ -15,57 +15,57 @@
         <img src="assets/logo.png" alt="Logo AGRO PALME">
         <div>
           <div class="name">AGRO PALME</div>
-          <div class="tag">Import – Export de Produits Agro-alimentaires</div>
+          <div class="tag" data-i18n="nav.brand-tag">Import – Export de Produits Agro-alimentaires</div>
         </div>
       </div>
       <nav class="menu">
-        <a href='index.html'>Accueil</a>
-        <a href='produits.html'>Produits</a>
-        <a href='services.html'>Services</a>
-        <a href='contact.html' style='color:var(--text);background:rgba(201,162,77,.12)'>Contact</a>
-        <a class="btn" href="contact.html">Demander un devis</a>
+        <a href='index.html' data-i18n="nav.home">Accueil</a>
+        <a href='produits.html' data-i18n="nav.products">Produits</a>
+        <a href='services.html' data-i18n="nav.services">Services</a>
+        <a href='contact.html' style='color:var(--text);background:rgba(201,162,77,.12)' data-i18n="nav.contact">Contact</a>
+        <a class="btn" href="contact.html" data-i18n="nav.quote">Demander un devis</a>
+        <button id="lang-btn" class="lang-btn" type="button">EN</button>
       </nav>
     </div>
   </header>
 
-  
 <section class="section">
   <div class="container">
-    <h2>Contact</h2>
-    <p>Contactez-nous pour une commande, un devis, ou une demande d’échantillons.</p>
+    <h2 data-i18n="contact.h2">Contact</h2>
+    <p data-i18n="contact.intro">Contactez-nous pour une commande, un devis, ou une demande d'échantillons.</p>
 
     <div class="grid" style="grid-template-columns:1.1fr .9fr">
       <div class="card item">
-        <h3>Formulaire (simple)</h3>
-        <p><small>Ce formulaire est “statique”. Pour recevoir les messages, vous pouvez : (1) utiliser un service de formulaire, ou (2) le faire envoyer vers votre email. Je peux vous aider à l’activer.</small></p>
+        <h3 data-i18n="contact.form-title">Formulaire (simple)</h3>
+        <p><small data-i18n="contact.form-note">Ce formulaire est "statique". Pour recevoir les messages, vous pouvez : (1) utiliser un service de formulaire, ou (2) le faire envoyer vers votre email. Je peux vous aider à l'activer.</small></p>
 
         <form class="form" action="contact.php" method="post">
           <div>
-            <label>Nom</label>
-            <input type="text" name="name" placeholder="Votre nom" required>
+            <label data-i18n="contact.label-name">Nom</label>
+            <input type="text" name="name" placeholder="Votre nom" data-i18n-ph="contact.ph-name" required>
           </div>
           <div>
-            <label>Téléphone</label>
+            <label data-i18n="contact.label-phone">Téléphone</label>
             <input type="text" name="phone" placeholder="+33 ...">
           </div>
           <div class="full">
-            <label>Email</label>
+            <label data-i18n="contact.label-email">Email</label>
             <input type="email" name="email" placeholder="votre@email.com" required>
           </div>
           <div class="full">
-            <label>Message</label>
-            <textarea name="message" placeholder="Votre message" required></textarea>
+            <label data-i18n="contact.label-message">Message</label>
+            <textarea name="message" placeholder="Votre message" data-i18n-ph="contact.ph-message" required></textarea>
           </div>
           <div class="full">
-            <button class="btn" type="submit">Envoyer</button>
+            <button class="btn" type="submit" data-i18n="contact.submit">Envoyer</button>
           </div>
         </form>
       </div>
 
       <div class="card item">
-        <h3>Coordonnées</h3>
-        <p><b>Ali HADID</b> • Dirigeant</p>
-        <p>Tél : <a href="tel:+33666715350">+33 6 66 71 53 50</a><br>
+        <h3 data-i18n="contact.coords-title">Coordonnées</h3>
+        <p data-i18n-html="contact.coords-role"><b>Ali HADID</b> • Dirigeant</p>
+        <p data-i18n-html="contact.coords-info">Tél : <a href="tel:+33666715350">+33 6 66 71 53 50</a><br>
         Email : <a href="mailto:contact@agro-palme.fr">contact@agro-palme.fr</a><br>
         Site : <a href="https://www.agro-palme.fr" target="_blank" rel="noopener">www.agro-palme.fr</a></p>
         <p style="margin-top:14px"><small>SAS AGRO PALME • SIREN 931 832 422</small></p>
@@ -89,5 +89,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>

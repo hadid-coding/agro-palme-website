@@ -15,40 +15,40 @@
         <img src="assets/logo.png" alt="Logo AGRO PALME">
         <div>
           <div class="name">AGRO PALME</div>
-          <div class="tag">Import – Export de Produits Agro-alimentaires</div>
+          <div class="tag" data-i18n="nav.brand-tag">Import – Export de Produits Agro-alimentaires</div>
         </div>
       </div>
       <nav class="menu">
-        <a href='index.html'>Accueil</a>
-        <a href='produits.html'>Produits</a>
-        <a href='services.html' style='color:var(--text);background:rgba(201,162,77,.12)'>Services</a>
-        <a href='contact.html'>Contact</a>
-        <a class="btn" href="contact.html">Demander un devis</a>
+        <a href='index.html' data-i18n="nav.home">Accueil</a>
+        <a href='produits.html' data-i18n="nav.products">Produits</a>
+        <a href='services.html' style='color:var(--text);background:rgba(201,162,77,.12)' data-i18n="nav.services">Services</a>
+        <a href='contact.html' data-i18n="nav.contact">Contact</a>
+        <a class="btn" href="contact.html" data-i18n="nav.quote">Demander un devis</a>
+        <button id="lang-btn" class="lang-btn" type="button">EN</button>
       </nav>
     </div>
   </header>
 
-  
 <section class="section">
   <div class="container">
-    <h2>Services</h2>
-    <p>Un portail simple pour présenter clairement ce que vous faites, et convertir plus vite.</p>
+    <h2 data-i18n="services.h2">Services</h2>
+    <p data-i18n="services.intro">Un portail simple pour présenter clairement ce que vous faites, et convertir plus vite.</p>
 
     <div class="grid">
       <div class="card item">
         <div class="top"><span class="badge">Import</span></div>
-        <h3>Sourcing & Import</h3>
-        <p>Sélection de producteurs, contrôle qualité, organisation des expéditions.</p>
+        <h3 data-i18n="services.import-title">Sourcing & Import</h3>
+        <p data-i18n="services.import-desc">Sélection de producteurs, contrôle qualité, organisation des expéditions.</p>
       </div>
       <div class="card item">
         <div class="top"><span class="badge">Export</span></div>
-        <h3>Export & Distribution</h3>
-        <p>Offres B2B, conditionnements adaptés, suivi commande et livraison.</p>
+        <h3 data-i18n="services.export-title">Export & Distribution</h3>
+        <p data-i18n="services.export-desc">Offres B2B, conditionnements adaptés, suivi commande et livraison.</p>
       </div>
       <div class="card item">
         <div class="top"><span class="badge">B2B</span></div>
-        <h3>Devis rapide</h3>
-        <p>Réponse rapide avec informations : quantités, destination, délai, prix.</p>
+        <h3 data-i18n="services.b2b-title">Devis rapide</h3>
+        <p data-i18n="services.b2b-desc">Réponse rapide avec informations : quantités, destination, délai, prix.</p>
       </div>
     </div>
   </div>
@@ -69,5 +69,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>

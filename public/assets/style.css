@@ -128,3 +128,13 @@ small{color:var(--muted)}
 
 .hero-logo{display:flex;justify-content:center;margin:18px 0 8px}
 .hero-logo img{width:min(260px,62vw);height:auto;filter:drop-shadow(0 10px 22px rgba(0,0,0,.18))}
+
+/* --- Language toggle --- */
+.lang-btn{
+  cursor:pointer;font-family:inherit;
+  border:1px solid var(--line);color:var(--muted);
+  padding:8px 14px;border-radius:999px;
+  font-size:13px;font-weight:800;letter-spacing:.08em;
+  background:rgba(31,107,79,.06);
+}
+.lang-btn:hover{color:var(--text);background:rgba(31,107,79,.10)}
