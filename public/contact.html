@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AGRO PALME – Import / Export de produits agro-alimentaires. Spécialité : dattes Deglet Nour.">
+  <title>Contact • AGRO PALME</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo AGRO PALME">
+        <div>
+          <div class="name">AGRO PALME</div>
+          <div class="tag">Import – Export de Produits Agro-alimentaires</div>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href='index.html'>Accueil</a>
+        <a href='produits.html'>Produits</a>
+        <a href='services.html'>Services</a>
+        <a href='contact.html' style='color:var(--text);background:rgba(201,162,77,.12)'>Contact</a>
+        <a class="btn" href="contact.html">Demander un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  
+<section class="section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Contactez-nous pour une commande, un devis, ou une demande d’échantillons.</p>
+
+    <div class="grid" style="grid-template-columns:1.1fr .9fr">
+      <div class="card item">
+        <h3>Formulaire (simple)</h3>
+        <p><small>Ce formulaire est “statique”. Pour recevoir les messages, vous pouvez : (1) utiliser un service de formulaire, ou (2) le faire envoyer vers votre email. Je peux vous aider à l’activer.</small></p>
+
+        <form class="form" action="contact.php" method="post">
+          <div>
+            <label>Nom</label>
+            <input type="text" name="name" placeholder="Votre nom" required>
+          </div>
+          <div>
+            <label>Téléphone</label>
+            <input type="text" name="phone" placeholder="+33 ...">
+          </div>
+          <div class="full">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="full">
+            <label>Message</label>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+          </div>
+          <div class="full">
+            <button class="btn" type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card item">
+        <h3>Coordonnées</h3>
+        <p><b>Ali HADID</b> • Dirigeant</p>
+        <p>Tél : <a href="tel:+33666715350">+33 6 66 71 53 50</a><br>
+        Email : <a href="mailto:contact@agro-palme.fr">contact@agro-palme.fr</a><br>
+        Site : <a href="https://www.agro-palme.fr" target="_blank" rel="noopener">www.agro-palme.fr</a></p>
+        <p style="margin-top:14px"><small>SAS AGRO PALME • SIREN 931 832 422</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
+        <div>© <span id="y"></span> AGRO PALME • SAS • SIREN 931 832 422 • France</div>
+        <div>
+          <a href="mailto:contact@agro-palme.fr">contact@agro-palme.fr</a> •
+          <a href="https://www.agro-palme.fr" target="_blank" rel="noopener">www.agro-palme.fr</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

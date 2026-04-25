@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AGRO PALME – Import / Export de produits agro-alimentaires. Spécialité : dattes Deglet Nour.">
+  <title>Produits • AGRO PALME</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logo AGRO PALME">
+        <div>
+          <div class="name">AGRO PALME</div>
+          <div class="tag">Import – Export de Produits Agro-alimentaires</div>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href='index.html'>Accueil</a>
+        <a href='produits.html' style='color:var(--text);background:rgba(201,162,77,.12)'>Produits</a>
+        <a href='services.html'>Services</a>
+        <a href='contact.html'>Contact</a>
+        <a class="btn" href="contact.html">Demander un devis</a>
+      </nav>
+    </div>
+  </header>
+
+  
+
+<section class="section">
+  <div class="container">
+    <h2>Catalogue produits</h2>
+    <p>Photos réelles. Cliquez sur un produit pour zoomer et parcourir la galerie.</p>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all" type="button">Tout</button>
+      <button class="filter-btn" data-filter="branchette" type="button">Branchette 1 kg</button>
+      <button class="filter-btn" data-filter="arjoun1" type="button">Arjoun 1 kg</button>
+      <button class="filter-btn" data-filter="arjoun3" type="button">Arjoun 3 kg</button>
+    </div>
+
+    <div class="gallery">
+      <article class="card item gcard" data-cat="branchette" data-title="Branchette • 1 kg" data-desc="Présentation premium, idéale pour la revente et les rayons." data-imgs="assets/photos/branchette-1kg-1-full.jpg,assets/photos/branchette-1kg-2-full.jpg,assets/photos/branchette-1kg-3-full.jpg,assets/photos/branchette-1kg-4-full.jpg">
+  <div class="imgwrap"><img loading="lazy" src="assets/photos/branchette-1kg-1-thumb.jpg" alt="Branchette • 1 kg"></div>
+  <div class="meta">
+    <h3>Branchette • 1 kg</h3>
+    <p>Présentation premium, idéale pour la revente et les rayons.</p>
+    <div class="tags"><span class='tag'>Deglet Nour</span><span class='tag'>1 kg</span><span class='tag'>Branchette</span></div>
+  </div>
+</article>
+      <article class="card item gcard" data-cat="arjoun1" data-title="Arjoun • Boîte transparente • 1 kg" data-desc="Visuel vitrine, attractif et premium." data-imgs="assets/photos/arjoun-1kg-1-full.jpg,assets/photos/arjoun-1kg-3-full.jpg,assets/photos/arjoun-1kg-4-full.jpg">
+  <div class="imgwrap"><img loading="lazy" src="assets/photos/arjoun-1kg-1-thumb.jpg" alt="Arjoun • Boîte transparente • 1 kg"></div>
+  <div class="meta">
+    <h3>Arjoun • Boîte transparente • 1 kg</h3>
+    <p>Visuel vitrine, attractif et premium.</p>
+    <div class="tags"><span class='tag'>Deglet Nour</span><span class='tag'>1 kg</span><span class='tag'>Arjoun</span></div>
+  </div>
+</article>
+      <article class="card item gcard" data-cat="arjoun3" data-title="Arjoun • 3 kg" data-desc="Format professionnel, adapté aux grossistes." data-imgs="assets/photos/arjoun-3kg-1-full.jpg,assets/photos/arjoun-3kg-2-full.jpg,assets/photos/arjoun-3kg-3-full.jpg">
+  <div class="imgwrap"><img loading="lazy" src="assets/photos/arjoun-3kg-1-thumb.jpg" alt="Arjoun • 3 kg"></div>
+  <div class="meta">
+    <h3>Arjoun • 3 kg</h3>
+    <p>Format professionnel, adapté aux grossistes.</p>
+    <div class="tags"><span class='tag'>Deglet Nour</span><span class='tag'>3 kg</span><span class='tag'>Pro</span></div>
+  </div>
+</article>
+    </div>
+
+    <p style="margin-top:18px"><a class="btn" href="contact.html">Demander un devis</a></p>
+  </div>
+</section>
+
+<div class="lightbox" id="lb" aria-hidden="true">
+  <div class="lightbox-inner">
+    <div class="lightbox-top">
+      <div class="t" id="lbTitle">Produit</div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="iconbtn" id="prev" type="button">◀</button>
+        <button class="iconbtn" id="next" type="button">▶</button>
+        <button class="iconbtn" id="close" type="button">✕</button>
+      </div>
+    </div>
+    <img class="lightbox-img" id="lbImg" alt="">
+    <div class="lightbox-bottom">
+      <div id="lbDesc"></div>
+      <div><small>ESC pour fermer • ← → pour naviguer</small></div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.gcard');
+
+  function setActive(btn){ btns.forEach(b=>b.classList.remove('active')); btn.classList.add('active'); }
+  function applyFilter(f){ 
+    cards.forEach(c=>{
+      const ok = (f==='all') || (c.dataset.cat===f);
+      c.style.display = ok ? '' : 'none';
+    });
+  }
+  btns.forEach(b=>b.addEventListener('click', ()=>{ setActive(b); applyFilter(b.dataset.filter); }));
+
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lbImg');
+  const lbTitle = document.getElementById('lbTitle');
+  const lbDesc = document.getElementById('lbDesc');
+  const closeBtn = document.getElementById('close');
+  const prevBtn = document.getElementById('prev');
+  const nextBtn = document.getElementById('next');
+
+  let imgs=[], idx=0;
+
+  function show(){ 
+    lbImg.src = imgs[idx] || '';
+    lbImg.alt = (lbTitle.textContent || 'Produit') + ' – photo ' + (idx+1);
+  }
+  function openLb(card){ 
+    imgs = (card.dataset.imgs || '').split(',').filter(Boolean);
+    idx = 0;
+    lbTitle.textContent = card.dataset.title || 'Produit';
+    lbDesc.textContent = card.dataset.desc || '';
+    show();
+    lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+  }
+  function closeLb(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
+  function prev(){ idx = (idx - 1 + imgs.length) % imgs.length; show(); }
+  function next(){ idx = (idx + 1) % imgs.length; show(); }
+
+  cards.forEach(c=>c.addEventListener('click', ()=>openLb(c)));
+  closeBtn.addEventListener('click', closeLb);
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+  lb.addEventListener('click', (e)=>{ if(e.target===lb) closeLb(); });
+  document.addEventListener('keydown', (e)=>{
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') closeLb();
+    if(e.key==='ArrowLeft') prev();
+    if(e.key==='ArrowRight') next();
+  });
+})();
+</script>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
+        <div>© <span id="y"></span> AGRO PALME • SAS • SIREN 931 832 422 • France</div>
+        <div>
+          <a href="mailto:contact@agro-palme.fr">contact@agro-palme.fr</a> •
+          <a href="https://www.agro-palme.fr" target="_blank" rel="noopener">www.agro-palme.fr</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
